@@ -14,6 +14,10 @@
 		8F45D7D91C094E4200BCBC2F /* Phone_Register.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8F45D7D71C094E4200BCBC2F /* Phone_Register.xcdatamodeld */; };
 		8F45D7DB1C094E4200BCBC2F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8F45D7DA1C094E4200BCBC2F /* Assets.xcassets */; };
 		8F45D7DE1C094E4200BCBC2F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F45D7DC1C094E4200BCBC2F /* LaunchScreen.storyboard */; };
+		8FD0D9C11C09999B00E44D8C /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FD0D9BD1C09999B00E44D8C /* Fabric.framework */; };
+		8FD0D9C21C09999B00E44D8C /* DigitsKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FD0D9BE1C09999B00E44D8C /* DigitsKit.framework */; };
+		8FD0D9C31C09999B00E44D8C /* DigitsKitResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 8FD0D9BF1C09999B00E44D8C /* DigitsKitResources.bundle */; };
+		8FD0D9C41C09999B00E44D8C /* TwitterCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FD0D9C01C09999B00E44D8C /* TwitterCore.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +32,10 @@
 		8F45D7DA1C094E4200BCBC2F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8F45D7DD1C094E4200BCBC2F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8F45D7DF1C094E4200BCBC2F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8FD0D9BD1C09999B00E44D8C /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = "<group>"; };
+		8FD0D9BE1C09999B00E44D8C /* DigitsKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = DigitsKit.framework; sourceTree = "<group>"; };
+		8FD0D9BF1C09999B00E44D8C /* DigitsKitResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = DigitsKitResources.bundle; path = DigitsKit.framework/Versions/A/Resources/DigitsKitResources.bundle; sourceTree = "<group>"; };
+		8FD0D9C01C09999B00E44D8C /* TwitterCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TwitterCore.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +43,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8FD0D9C11C09999B00E44D8C /* Fabric.framework in Frameworks */,
+				8FD0D9C41C09999B00E44D8C /* TwitterCore.framework in Frameworks */,
+				8FD0D9C21C09999B00E44D8C /* DigitsKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +55,10 @@
 		8F45D7BF1C094E4200BCBC2F = {
 			isa = PBXGroup;
 			children = (
+				8FD0D9BD1C09999B00E44D8C /* Fabric.framework */,
+				8FD0D9BE1C09999B00E44D8C /* DigitsKit.framework */,
+				8FD0D9BF1C09999B00E44D8C /* DigitsKitResources.bundle */,
+				8FD0D9C01C09999B00E44D8C /* TwitterCore.framework */,
 				8F45D7CA1C094E4200BCBC2F /* Phone Register */,
 				8F45D7C91C094E4200BCBC2F /* Products */,
 			);
@@ -108,6 +123,7 @@
 				8F45D7C41C094E4200BCBC2F /* Sources */,
 				8F45D7C51C094E4200BCBC2F /* Frameworks */,
 				8F45D7C61C094E4200BCBC2F /* Resources */,
+				8FD0D9BC1C09987D00E44D8C /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -155,6 +171,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8FD0D9C31C09999B00E44D8C /* DigitsKitResources.bundle in Resources */,
 				8F45D7DE1C094E4200BCBC2F /* LaunchScreen.storyboard in Resources */,
 				8F45D7DB1C094E4200BCBC2F /* Assets.xcassets in Resources */,
 				8F45D7D61C094E4200BCBC2F /* Main.storyboard in Resources */,
@@ -162,6 +179,22 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8FD0D9BC1C09987D00E44D8C /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "./Fabric.framework/run e2428eb1b9095c792078e4c5fd671c4bb2199a53 ba6d5f77dce5c9343a4861ed5170118d829c63e951b8699ad396ec85c13073f5";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8F45D7C41C094E4200BCBC2F /* Sources */ = {
@@ -281,6 +314,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = "Phone Register/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -293,6 +330,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = "Phone Register/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -320,6 +361,7 @@
 				8F45D7E41C094E4200BCBC2F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
